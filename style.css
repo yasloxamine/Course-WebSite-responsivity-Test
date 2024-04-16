@@ -1,0 +1,55 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-align: center;
+}
+
+.logo {
+  width: 9rem;
+}
+
+#h1 {
+  margin-bottom: 5%;
+}
+
+.grid-container {
+  padding: 0% 20%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5%;
+}
+
+.card-image {
+  width: 100%;
+  float: left;
+  border-radius: 10%;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: left;
+}
+
+footer {
+  text-align: center;
+  grid-column: span 2;
+}
+
+@media (max-width: 690px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .logo-container {
+    justify-content: center;
+  }
+
+  footer {
+    grid-column: span 1;
+  }
+
+  .grid-container {
+    gap: 2%;
+  }
+}
